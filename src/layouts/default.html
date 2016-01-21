@@ -1,0 +1,49 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drsn0w.net</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      </div>
+    </div>
+    <div class="title-bar" data-responsive-toggle="site-navigation" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="top-bar" id="site-navigation">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">drsn0w</li>
+          <li><a href="/index.html">Home</a></li>
+          <li class="has-submenu">
+            <a href="#">Projects</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#">Software</a></li>
+              <li><a href="#">Hardware</a></li>
+              <li><a href="#">Radio</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">Media</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Gaming</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>
